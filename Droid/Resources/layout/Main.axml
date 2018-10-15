@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center_horizontal"
+	android:minHeight="25px"
+	android:minWidth="25px"
+	android:orientation="vertical"
+	android:background="#ff00838f">
+	<EditText
+		android:id="@+id/editTxtAmount"
+		android:layout_width="100dp"
+		android:layout_height="40dp"
+		android:layout_margin="25dp"
+		android:background="#ffffff"
+		android:foregroundGravity="center"
+	    android:hint="amount"/>
+	<EditText
+		android:id="@+id/editTxtFrom"
+		android:layout_width="100dp"
+		android:layout_height="40dp"
+		android:layout_margin="25dp"
+		android:background="#ffffff"
+		android:foregroundGravity="center"
+	    android:hint="from"/>
+	<EditText
+		android:id="@+id/editTxtTo"
+		android:layout_width="100dp"
+		android:layout_height="40dp"
+		android:layout_margin="25dp"
+		android:background="#ffffff"
+		android:foregroundGravity="center"
+	     android:hint="To"/>
+	<Button
+		android:id="@+id/btnCalc"
+		android:layout_width="100dp"
+		android:layout_height="40dp"
+		android:layout_margin="25dp"
+		android:background="#ffffff"
+		android:text="calc" />
+	<TextView
+		android:id="@+id/viewVResult"
+		android:layout_width="100dp"
+		android:layout_height="40dp"
+		android:layout_margin="25dp"
+		android:background="#ffffff"
+		android:foregroundGravity="center"
+		android:textAlignment="center"
+		android:textSize="20dp"
+	    android:hint="result"/>
+
+
+</LinearLayout>

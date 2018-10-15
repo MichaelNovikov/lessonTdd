@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="203" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="158.5" y="204" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <constraints>
+                                    <constraint id="218" firstAttribute="width" constant="97"/>
+                                </constraints>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="204" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="158.5" y="290" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="205" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="158.5" y="353" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="207" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="179.5" y="468" width="55" height="30"/>
+                                <state key="normal" title="Convert"/>
+                                <connections>
+                                    <action selector="_btnConvert_TouchUpInside:" destination="BYZ-38-t0r" id="553" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="208" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="158" y="520" width="98" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint id="214" firstAttribute="centerX" secondItem="203" secondAttribute="centerX"/>
+                            <constraint id="215" firstAttribute="centerX" secondItem="204" secondAttribute="centerX"/>
+                            <constraint id="216" firstAttribute="centerX" secondItem="205" secondAttribute="centerX"/>
+                            <constraint id="217" firstItem="203" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="184"/>
+                            <constraint id="219" firstItem="204" firstAttribute="top" secondItem="203" secondAttribute="bottom" constant="56"/>
+                            <constraint id="220" firstItem="205" firstAttribute="top" secondItem="204" secondAttribute="bottom" constant="33"/>
+                            <constraint id="221" firstItem="204" firstAttribute="width" secondItem="203" secondAttribute="width"/>
+                            <constraint id="222" firstItem="205" firstAttribute="width" secondItem="203" secondAttribute="width"/>
+                            <constraint id="223" firstAttribute="centerX" secondItem="207" secondAttribute="centerX"/>
+                            <constraint id="224" firstItem="207" firstAttribute="top" secondItem="205" secondAttribute="bottom" constant="85"/>
+                            <constraint id="1007" firstItem="208" firstAttribute="top" secondItem="207" secondAttribute="bottom" constant="22"/>
+                            <constraint id="1008" firstItem="208" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="138"/>
+                            <constraint id="1009" firstItem="208" firstAttribute="height" secondItem="205" secondAttribute="height" constant="-9"/>
+                            <constraint id="1010" firstItem="208" firstAttribute="width" secondItem="205" secondAttribute="width" constant="1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="_tfAmount" destination="203" id="name-outlet-203"/>
+                        <outlet property="_tfFrom" destination="204" id="name-outlet-204"/>
+                        <outlet property="_tfTo" destination="205" id="name-outlet-205"/>
+                        <outlet property="_btnConvert" destination="207" id="name-outlet-207"/>
+                        <outlet property="_lblRes" destination="208" id="name-outlet-208"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+</document>
