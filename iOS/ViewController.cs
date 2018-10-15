@@ -44,9 +44,9 @@ namespace lessonTdd.iOS
                 _tfTo.TextColor = UIColor.Red;
                 return;
             }
-            catch (ConvertException)
+            catch (ConvertException ex)
             {
-                var okAlertController = UIAlertController.Create("Title", "The message", UIAlertControllerStyle.Alert);
+                var okAlertController = UIAlertController.Create("Title", $"{ex.Message}", UIAlertControllerStyle.Alert);
 
                 okAlertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
 

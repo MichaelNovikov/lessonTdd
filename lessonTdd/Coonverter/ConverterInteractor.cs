@@ -23,7 +23,7 @@ namespace lessonTdd.Coonverter
             {
                 throw new ConvertException(ex.Message);
             }
-
+            
             return new CurrencyAmount(amount.Amount * ratio, currencyTo);
         }
     }
